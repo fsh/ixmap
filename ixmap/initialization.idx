@@ -1,0 +1,6 @@
+normalize	ixmap/initialization.html#normalize,IxMap[D]	initialization: normalize[D: static[int]](x: var IxMap[D])	
+initIxMap	ixmap/initialization.html#initIxMap,array[D,T],array[D,U],int	initialization: initIxMap[D: static[int]; T, U](shape: array[D, T]; stride: array[D, U];\n                                offset: int = 0): IxMap[D]	
+initIxMap	ixmap/initialization.html#initIxMap,array[D,T]	initialization: initIxMap[D: static[int]; T](shape: array[D, T]): IxMap[D]	
+initIxMap	ixmap/initialization.html#initIxMap,int	initialization: initIxMap(offset: int): IxMap[0]	
+revert	ixmap/initialization.html#revert,IxMap[D]	initialization: revert[D: static[int]](x: var IxMap[D])	
+initLoopIx	ixmap/initialization.html#initLoopIx,array[D,T]	initialization: initLoopIx[D: static[int]; T](shape: array[D, T]): IxMap[D]	

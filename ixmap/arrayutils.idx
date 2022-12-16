@@ -1,0 +1,10 @@
+rollRight	ixmap/arrayutils.html#rollRight,array[I,T],Slice[int]	arrayutils: rollRight[I, T](arr: var array[I, T]; r: Slice[int])	
+rollLeft	ixmap/arrayutils.html#rollLeft,array[I,T],Slice[int]	arrayutils: rollLeft[I, T](arr: var array[I, T]; r: Slice[int])	
+`&amp;`	ixmap/arrayutils.html#&,array[N,T],array[M,T]	arrayutils: `&amp;`[N, M: static[int]; T](a: array[N, T]; b: array[M, T]): auto	
+remove	ixmap/arrayutils.html#remove,array[N,T],int	arrayutils: remove[N: static[int]; T](arr: array[N, T]; idx: int): auto	
+insert	ixmap/arrayutils.html#insert,array[N,T],int,sinkT	arrayutils: insert[N: static[int]; T](arr: array[N, T]; idx: int; val: sink T): auto	
+longMax	ixmap/arrayutils.html#longMax,,	arrayutils: longMax[N, M: static[int]; T](a`gensym0: array[N, T]; b`gensym0: array[M, T]): auto	
+shortMax	ixmap/arrayutils.html#shortMax,,	arrayutils: shortMax[N, M: static[int]; T](a`gensym0: array[N, T];\n                               b`gensym0: array[M, T]): auto	
+longMin	ixmap/arrayutils.html#longMin,,	arrayutils: longMin[N, M: static[int]; T](a`gensym5: array[N, T]; b`gensym5: array[M, T]): auto	
+shortMin	ixmap/arrayutils.html#shortMin,,	arrayutils: shortMin[N, M: static[int]; T](a`gensym5: array[N, T];\n                               b`gensym5: array[M, T]): auto	
+shortDotProduct	ixmap/arrayutils.html#shortDotProduct.m,R,array[N,T],array[M,U]	arrayutils: shortDotProduct[N, M: static[int]; T, U, R](initial: R; x: array[N, T];\n    y: array[M, U]): untyped	

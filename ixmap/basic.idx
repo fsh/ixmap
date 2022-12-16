@@ -1,0 +1,7 @@
+ndims	ixmap/basic.html#ndims.t,IxMap[D]	basic: ndims[D: static[int]](x: IxMap[D]): static[int]	
+size	ixmap/basic.html#size,IxMap	basic: size(x: IxMap): int	
+shape	ixmap/basic.html#shape,IxMap[D]	basic: shape[D: static[int]](x: IxMap[D]): IxArray[D]	
+`$`	ixmap/basic.html#$,IxMap	basic: `$`(x: IxMap): string	
+`==`	ixmap/basic.html#==,IxMap[D1],IxMap[D2]	basic: `==`[D1, D2: static[int]](x: IxMap[D1]; y: IxMap[D2]): bool	
+broadcast2	ixmap/basic.html#broadcast2,IxMap[D1],IxMap[D2]	basic: broadcast2[D1, D2: static[int]](ix1: IxMap[D1]; ix2: IxMap[D2]): auto	
+broadcast	ixmap/basic.html#broadcast.m,untyped,varargs[untyped]	basic: broadcast(ix: untyped; rest: varargs[untyped]): auto	

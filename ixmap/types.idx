@@ -1,0 +1,12 @@
+IxMap	ixmap/types.html#IxMap	types: IxMap	
+toIxArray	ixmap/types.html#toIxArray.c,array[D,T]	types: toIxArray[D: static[int]; T: SomeInteger](x: array[D, T]): IxArray[D]	
+toIntArray	ixmap/types.html#toIntArray.c,IxArray[D]	types: toIntArray[D: static[int]](x: IxArray[D]): array[D, int]	
+toInt	ixmap/types.html#toInt.c,IxMap[]	types: toInt(ix: IxMap[0]): int	
+Axis	ixmap/types.html#Axis	types: Axis	
+StaticAxes	ixmap/types.html#StaticAxes	types: StaticAxes	
+AnyAxis	ixmap/types.html#AnyAxis	types: AnyAxis	
+AxisSpec	ixmap/types.html#AxisSpec	types: AxisSpec	
+AllAxes	ixmap/types.html#AllAxes	types: AllAxes	
+pairs	ixmap/types.html#pairs.i,set[Axis]	types: pairs(axes: set[Axis]): (int, Axis)	
+orthogonal	ixmap/types.html#orthogonal,Axis,set[Axis]	types: orthogonal(dim: Axis; axes: set[Axis]): set[Axis]	
+filter	ixmap/types.html#filter,Axis,set[Axis]	types: filter(dim: Axis; axes: set[Axis]): set[Axis]	

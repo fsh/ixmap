@@ -1,0 +1,8 @@
+qq	ixmap/macros.html#qq.t,untyped	macros: qq(q: untyped): untyped	
+foldArgsR	ixmap/macros.html#foldArgsR.m,untyped,untyped,varargs[untyped]	macros: foldArgsR(op: untyped; initial: untyped; args: varargs[untyped]): untyped	
+constrCopy	ixmap/macros.html#constrCopy.m,static[set[Axis]],untyped,untyped	macros: constrCopy(axes: static[set[Axis]]; dest, src: untyped): untyped	
+constrLoopTower	ixmap/macros.html#constrLoopTower.m,array[N,T],array[M,U],untyped	macros: constrLoopTower[N, M: static[int]; T, U](coords: array[N, T];\n    shape: array[M, U]; body: untyped): untyped	
+constrOffset	ixmap/macros.html#constrOffset.m,static[set[Axis]],int,array[D,T],array[L,U]	macros: constrOffset[D, L: static[int]; T, U](axes: static[set[Axis]]; initial: int;\n                                      stride: array[D, T]; coords: array[L, U]): untyped	
+constrStrideSort	ixmap/macros.html#constrStrideSort.m,static[int],array,varargs[array]	macros: constrStrideSort(dims: static[int]; primary: array; arrays: varargs[array]): untyped	
+constrBracketIndex	ixmap/macros.html#constrBracketIndex,int,NimNode,NimNode	macros: constrBracketIndex(dims: int; srcexpr: NimNode; ixlist: NimNode): NimNode	
+constrIndexing	ixmap/macros.html#constrIndexing,static[int],NimNode,NimNode	macros: constrIndexing(D: static[int]; srcexpr: NimNode; ixs: NimNode): NimNode	

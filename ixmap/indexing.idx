@@ -1,0 +1,8 @@
+`^@`	ixmap/indexing.html#^@,IxMap[D],array[N,IxInt]	indexing: `^@`[D, N: static[int]](ix: IxMap[D]; coords: array[N, IxInt]): int	
+collapse	ixmap/indexing.html#collapse,IxMap[D],int,	indexing: collapse[D: static[int]](x: IxMap[D]; dim: int;\n                         idx: SomeInteger or BackwardsIndex): auto	
+sliceM	ixmap/indexing.html#sliceM,IxMap[D],int,	indexing: sliceM[D: static[int]](x: var IxMap[D]; dim: int; idx: AnyStrided | HSlice)	
+slice	ixmap/indexing.html#slice,sinkIxMap[D],int,S	indexing: slice[D: static[int]; S](x: sink IxMap[D]; dim: int; idx: S): IxMap[D]	
+select	ixmap/indexing.html#select,IxMap,static[int],AnyIndexing	indexing: select(ix: IxMap; dim: static[int]; idx: AnyIndexing): auto	
+NewAxis	ixmap/indexing.html#NewAxis	indexing: NewAxis	
+rep	ixmap/indexing.html#rep,int	indexing: rep(x: int): NewAxis	
+`[]`	ixmap/indexing.html#[].m,IxMap[D],varargs[untyped]	indexing: `[]`[D: static[int]](srcexpr: IxMap[D]; idxs: varargs[untyped]): untyped	

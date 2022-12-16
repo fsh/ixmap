@@ -1,0 +1,4 @@
+reverse	ixmap/transforms.html#reverse,sinkIxMap[D],int	transforms: reverse[D: static[int]](x: sink IxMap[D]; n: int): IxMap[D]	
+reverse	ixmap/transforms.html#reverse,sinkIxMap[D]	transforms: reverse[D: static[int]](x: sink IxMap[D]): IxMap[D]	
+transpose	ixmap/transforms.html#transpose,sinkIxMap[D]	transforms: transpose[D: static[int]](x: sink IxMap[D]): IxMap[D]	
+diagonal	ixmap/transforms.html#diagonal,IxMap[D]	transforms: diagonal[D: static[int]](x: IxMap[D]): IxMap[1]	

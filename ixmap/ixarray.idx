@@ -1,0 +1,3 @@
+IxInt	ixmap/ixarray.html#IxInt	ixarray: IxInt	
+IxArray	ixmap/ixarray.html#IxArray	ixarray: IxArray	
+contiguousStrides	ixmap/ixarray.html#contiguousStrides,IxArray[D]	ixarray: contiguousStrides[D: static[int]](shape: IxArray[D]): IxArray[D]	

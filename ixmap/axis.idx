@@ -1,0 +1,9 @@
+newAxis	ixmap/axis.html#newAxis,IxMap[D],,int	axis: newAxis[D: static[int]](x: IxMap[D]; dim: int | BackwardsIndex; num: int = 1): auto	
+isRowMajor	ixmap/axis.html#isRowMajor,IxMap	axis: isRowMajor(x: IxMap): bool	
+makeRowMajor	ixmap/axis.html#makeRowMajor,IxMap	axis: makeRowMajor(x: var IxMap)	
+swapAxes	ixmap/axis.html#swapAxes,IxMap[D],int,int	axis: swapAxes[D: static[int]](ix: var IxMap[D]; x, y: int)	
+buryAxis	ixmap/axis.html#buryAxis,IxMap[D],int	axis: buryAxis[D: static[int]](ix: var IxMap[D]; x: int)	
+liftAxis	ixmap/axis.html#liftAxis,IxMap[D],int	axis: liftAxis[D: static[int]](ix: var IxMap[D]; n: int)	
+split	ixmap/axis.html#split,IxMap[D],static[int]	axis: split[D: static[int]](src: IxMap[D]; N: static[int]): auto	
+popAxisM	ixmap/axis.html#popAxisM,IxMap[D],AxisSpec	axis: popAxisM[D: static[int]](src: var IxMap[D]; axis: AxisSpec): auto	
+popAxis	ixmap/axis.html#popAxis,sinkIxMap[D],AxisSpec	axis: popAxis[D: static[int]](src: sink IxMap[D]; axis: AxisSpec): auto	
