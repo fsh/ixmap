@@ -37,6 +37,10 @@ iterator submaps*[D: static[int]](src: IxMap[D], axis: AxisSpec): auto {.inline.
     yield yield_ix
 
 
+iterator index*[T](u: var openArray[T], ix: IxMap): var T {.inline.} =
+  ## Iterate over the items this index maps to in a given a flat `openArray`.
+  for co in coords(ix):
+    yield u[ix ^@ co]
 
 iterator index*[T](u: openArray[T], ix: IxMap): lent T {.inline.} =
   ## Iterate over the items this index maps to in a given a flat `openArray`.

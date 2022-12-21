@@ -7,11 +7,11 @@ import ./macros
 import ./initialization
 
 
-template ndims*[D: static[int]](x: IxMap[D]): static[int] =
+template ndims*(x: IxMap): int =
   ## The dimensionality (number of axes) of the ixmap.
   ##
   ## This is part of the type itself and so is available statically.
-  D
+  x.D
 
 func size*(x: IxMap): int =
   ## Size is the product of shape: the size of all axes multiplied together.
@@ -48,8 +48,8 @@ proc broadcast2*[D1, D2: static[int]](ix1: IxMap[D1], ix2: IxMap[D2]): auto {.in
     if l[i] != h[i]:
       if l[i] != 1:
         raise newException(ValueError, &"cannot broadcast {ix1.shape} and {ix2.shape}")
-      else:
-        assert ix2.stride[i] == 0, "internal error: stride should be 0"
+      assert i >= D1 or ix1.shape[i] == h[i] or ix1.stride[i] == 0, "internal error: stride should be 0"
+      assert i >= D2 or ix2.shape[i] == h[i] or ix2.stride[i] == 0, "internal error: stride should be 0"
 
   initLoopIx(h)
 

@@ -1,6 +1,6 @@
 # Package
 
-version       = "0.1.0"
+version       = "0.1.1"
 author        = "Frank S. Hestvik"
 description   = "Efficient multidimensional indexing and iteration"
 license       = "MIT"
