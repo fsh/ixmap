@@ -2,7 +2,8 @@ offsets	ixmap/iterators.html#offsets.i,IxMap[D]	iterators: offsets[D: static[int
 coords	ixmap/iterators.html#coords.i,IxMap[D]	iterators: coords[D: static[int]](src: IxMap[D]): IxArray[D]	
 coordOffsets	ixmap/iterators.html#coordOffsets.i,IxMap[D]	iterators: coordOffsets[D: static[int]](src: IxMap[D]): (IxArray[D], int)	
 submaps	ixmap/iterators.html#submaps.i,IxMap[D],AxisSpec	iterators: submaps[D: static[int]](src: IxMap[D]; axis: AxisSpec): auto	
-index	ixmap/iterators.html#index.i,openArray[T],IxMap	iterators: index[T](u: openArray[T]; ix: IxMap): lent T	
+index	ixmap/iterators.html#index.i,openArray[T],IxMap	iterators: index[T](u: var openArray[T]; ix: IxMap): var T	
+index	ixmap/iterators.html#index.i,openArray[T],IxMap_2	iterators: index[T](u: openArray[T]; ix: IxMap): lent T	
 withCoords	ixmap/iterators.html#withCoords.i,openArray[T],IxMap[D]	iterators: withCoords[D: static[int]; T](u: openArray[T]; ix: IxMap[D]): (IxArray[D],\n    lent T)	
 withOffsets	ixmap/iterators.html#withOffsets.i,openArray[T],IxMap[D]	iterators: withOffsets[D: static[int]; T](u: openArray[T]; ix: IxMap[D]): (IxArray[D],\n    lent T)	
 zipImpl2	ixmap/iterators.html#zipImpl2.i,tuple[openArray[T1],openArray[T2]],IxMap,	iterators: zipImpl2[T1, T2](t: tuple[a: openArray[T1], b: openArray[T2]]; ix1: IxMap;\n                 ix2: distinct IxMap): (lent T1, lent T2)	
